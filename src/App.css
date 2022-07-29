@@ -1,0 +1,18 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300&display=swap');
+*{
+  font-family: 'Roboto Flex', sans-serif;
+  color:#4c4b4e;
+}
+
+
+/* Brand's colors  #55b4d0 soft-blue   #fe65c4 soft-pink  #ff5ac1 pink #4c4b4e grey */
+
+
+body{
+  margin:0;
+  padding:0;
+  height:100%;
+  width:100%;
+  background-color: #55b4d0;
+}
