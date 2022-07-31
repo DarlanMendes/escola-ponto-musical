@@ -1,12 +1,16 @@
 import './Home.css'
-import logo from '../../assets/logo.png'
-import photo from '../../assets/photopg1.png'
+import logo from '../../assets/logo-removebg-preview.png'
+import photo from '../../assets/photopg1-removebg-preview.png'
 import photox from '../../assets/foto1.PNG'
+import photobc from '../../assets/pag2.jpg'
+
+
 
 const Home = () => {
     return (
         <div className='pg1'>
             <div className='hmp'>
+            
 
                 <div className='lgtp'>
                     <img className='imglg imagem' src={logo} />

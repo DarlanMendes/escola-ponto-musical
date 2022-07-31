@@ -5,8 +5,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: 
-    #A5117C;
+    background-image: url(C:\Users\GLEYSON\Desktop\ESTUDOS\Aulas particular do Darlan\Escola de Musica\escola-ponto-musical\src\assets\violao-background1.jpg);
+    background-size: 100hv;
 }
 .imglg{
     width: 50vh;
@@ -39,14 +39,17 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(rgb(101, 193, 255),white);
 }
 
 
 .txt{
     font-size: 56px;
     font-weight: 700;
-    color: black;
+    color: rgb(255, 255, 255);
     text-align: center;
+   background-color: rgba(0, 0, 0, 0.575);
+   border-radius: 20px;
 }
 
 .txt2{

@@ -6,6 +6,7 @@ import Student from './pages/Student/Student';
 import Teacher from './pages/Teacher/Teacher';
 import Manager from './pages/Manager/Manager';
 import Navbar from './components/Navbar';
+
 function App() {
   return (
     <div className="App">
