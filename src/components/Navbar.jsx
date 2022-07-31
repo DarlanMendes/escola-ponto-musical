@@ -5,12 +5,12 @@ const Navbar = () => {
         <nav>
 
             <img src="" />
-            <ul>
-                <li><NavLink to="/">Home</NavLink></li>
-                <li> <NavLink to="/login">Login</NavLink></li>
-                <li><NavLink to="/student">Aluno</NavLink></li>
-                <li><NavLink to="/teacher">Professor</NavLink></li>
-                <li><NavLink to="/manager">Administrador</NavLink></li>
+            <ul className='nav-bar-list'>
+                <li className='nav-bar-item'><NavLink to="/">Home</NavLink></li>
+                <li className='nav-bar-item'> <NavLink to="/login">Login</NavLink></li>
+                <li className='nav-bar-item'><NavLink to="/student">Aluno</NavLink></li>
+                <li className='nav-bar-item'><NavLink to="/teacher">Professor</NavLink></li>
+                <li className='nav-bar-item'><NavLink to="/manager">Administrador</NavLink></li>
 
             </ul>
 
