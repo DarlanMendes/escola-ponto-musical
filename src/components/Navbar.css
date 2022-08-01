@@ -1,18 +1,23 @@
+.navbar{
+    display: none;
+}
 nav{
+    
+    position: fixed;
+    top:0;
+    left:0;
     height:52px;
     width:100%;
     margin: 0;
     padding:0;
+    z-index: 2;
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: black;
 }
 
-img{
-    display: flex;
-    flex:1
-}
+
 
 .nav-bar-list{
     display: flex;
