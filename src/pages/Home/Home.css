@@ -119,3 +119,56 @@
     padding: auto;
 }
 
+.history{
+    padding: 10vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 20vh;
+    
+ 
+}
+
+.group_section{
+    display: flex;    
+    justify-content: center;
+    
+    position: relative;
+    
+    width: 200vh;
+}
+
+.testecentral{
+   background-image: url(../../assets/photoinstagram/bckgrnd1.jpg);
+   background-size: 200vh;
+}
+
+.img-section{
+    height: 20vh;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.txt-section{
+    min-width: 300px;
+    width: 30vh;
+    background-color: rgba(0, 153, 255, 0.548);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 8px;
+    color: rgb(255, 255, 255);   
+}
+
+.txt-section p,.txt-section h1,.txt-section li{
+    text-align: center;
+    font-weight: 400;
+    color: antiquewhite;
+}
+
+.crescendo:hover{
+    transition: 1s;
+    transform: scale(1.1,1.1); 
+  }
+
+
+
