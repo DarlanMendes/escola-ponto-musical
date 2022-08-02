@@ -75,9 +75,8 @@ const Home = () => {
                 <div className='group_section'>
                 <div className='testecentral'>
                     <div className='history '>
-                        <div>
-                            <img className='img-section crescendo' src={photo1}></img>
-                        </div>
+                    <img className='img-section crescendo' src={photo4}></img>
+                        
                         <div className='txt-section crescendo'>
                             <h1>O que nós queremos?</h1>
                             <ul>
@@ -87,7 +86,7 @@ const Home = () => {
                             </ul>
 
                         </div>
-                        <img className='img-section crescendo' src={photo4}></img>
+                        
                         <div className='txt-section crescendo'>
                             <h1>Missão</h1>
                             <p>Contribuir para difusão da educação musical, formação de público, na excelência do ensino livre de música e visando a valorização da arte e da cultura e de toda cadeia produtiva.
@@ -98,6 +97,7 @@ const Home = () => {
                             <p>Estar entre as melhores escolas de música do Brasil.
                             </p>
                         </div>
+                        <img className='img-section crescendo' src={photo2}></img>
                         <div className='txt-section crescendo'>
                             <h1>Valores</h1>
                             <p>Focamos no sucesso do aluno, na qualidade da sua aprendizagem de forma individualizada e personalizada e o seu encantamento em relação à sua experiência na nossa escola.
@@ -120,26 +120,25 @@ const Home = () => {
 
                             </p>
                         </div>
-                        <div>
+                       
                             <img className='img-section crescendo' src={photo3}></img>
-                        </div>
-                        <div>
-                            <img className='img-section crescendo' src={photo5}></img>
-                        </div>
+                            
+                           
+                        
                         <div className='txt-section crescendo'>
                             <h1>Compromisso com o resultado</h1>
                             <p>Atuamos de forma engajada e comprometida e priorizamos a solução dos problemas enfrentados pelo aluno, através da nossa atuação.
                             </p>
                         </div>
-
+                        <div>
+                            <img className='img-section crescendo' src={photo1}></img>
+                        </div>
                         <div className='txt-section crescendo'>
                             <h1>Simplicidade e Foco</h1>
                             <p>Procedemos de forma simples e objetiva, buscando desburocratizar e descomplicar, e colocamos os processos e projetos a serviço das pessoas, sempre de forma clara e transparente.
                             </p>
                         </div>
-                        <div>
-                            <img className='img-section crescendo' src={photo2}></img>
-                        </div>
+                        <img className='img-section crescendo' src={photo5}></img>
 
                     </div>
                 </div>

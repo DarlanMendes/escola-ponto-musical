@@ -120,7 +120,7 @@
 }
 
 .history{
-    padding: 10vh;
+    padding: 1vh;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -135,12 +135,14 @@
     
     position: relative;
     
-    width: 200vh;
+    width: 100vw;
 }
 
 .testecentral{
    background-image: url(../../assets/photoinstagram/bckgrnd1.jpg);
-   background-size: 200vh;
+   background-size:cover;
+   background-position: center;
+   width: 100vw;
 }
 
 .img-section{
@@ -151,10 +153,10 @@
 
 .txt-section{
     min-width: 300px;
-    width: 30vh;
+    width: 33vh;
     background-color: rgba(0, 153, 255, 0.548);
     border-radius: 20px;
-    margin: 20px;
+    margin: 8px;
     padding: 8px;
     color: rgb(255, 255, 255);   
 }
