@@ -8,6 +8,9 @@ import photo2 from '../../assets/photoinstagram/ft1-violao.PNG'
 import photo3 from '../../assets/photoinstagram/ft2-violoes.PNG'
 import photo4 from '../../assets/photoinstagram/ft4-microfone.PNG'
 import photo5 from '../../assets/photoinstagram/ft5-crianca.PNG'
+import iconwhats from '../../assets/icon/whatsapp.png'
+import iconinsta from '../../assets/icon/instagram.png'
+import iconface from '../../assets/icon/facebook.png'
 import { useState, useEffect } from 'react'
 
 
@@ -69,7 +72,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className='pg2'>
-                    <div className='hst txt2 trsprc'>
+                    <div className='txt2'>
                         <h1>Um pouco da Escola de Música Ponto Musical.</h1>
                         <ul>
                             <li>Era uma vez um jovem casal de músicos, Welson e Késsya, que durante grande parte de suas carreiras profissionais ensinaram em diversas escolas de música em Fortaleza.
@@ -86,7 +89,7 @@ const Home = () => {
                                 conseguimos realizar um grande sonho de dar o primeiro passo no nosso projeto social, ENSAIOS PARA O FUTURO, que levou aulas de música gratuitamente e foi destinado a crianças e adolescentes estudantes de escola pública do bairro e de bairros próximos a escola.</li>
                         </ul>
                     </div>
-                    <img id='photopg2' className='crescendo' src={photox} />
+                    <div className='photopg2'><img id='fototurma' className='crescendo' src={photox} /></div>
                 </div>
                 <div className='group_section'>
                     <div className='testecentral'>
@@ -139,6 +142,25 @@ const Home = () => {
 
                             <img className='img-section crescendo' src={photo3}></img>
 
+                            
+                           
+                        
+                        <div className='txt-section crescendo'>
+                            <h1>Compromisso com o resultado</h1>
+                            <p>Atuamos de forma engajada e comprometida e priorizamos a solução dos problemas enfrentados pelo aluno, através da nossa atuação.
+                            </p>
+                        </div>
+                        <div>
+                            <img className='img-section2 crescendo' src={photo1}></img>
+                        </div>
+                        <div className='txt-section crescendo'>
+                            <h1>Simplicidade e Foco</h1>
+                            <p>Procedemos de forma simples e objetiva, buscando desburocratizar e descomplicar, e colocamos os processos e projetos a serviço das pessoas, sempre de forma clara e transparente.
+                            </p>
+                        </div>
+                        <img className='img-section crescendo' src={photo5}></img>
+
+
 
 
                             <div className='txt-section crescendo'>
@@ -159,6 +181,22 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+
+                </div>
+                <div className='contacts'>
+                    <div className='box-contacts'>
+                       
+                        <img className='box-contacts-img' src={iconwhats}></img>
+                        <img className='box-contacts-img' src={iconinsta}></img>
+                        <img className='box-contacts-img' src={iconface}></img>
+
+                     
+                        
+                    </div>
+                    
+                </div>
+
+
 
             </div>
 
