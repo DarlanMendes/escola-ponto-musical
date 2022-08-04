@@ -44,7 +44,7 @@ const Home = () => {
        
     }
     useEffect(() => {
-
+        console.log("entrou")
         setTimeout(function () {
             if (slideShow) {
             slideShowPosition();}
@@ -54,7 +54,7 @@ const Home = () => {
 
     return (
         <div className='home-container'>
-            <button onClick={()=>{setSlideShow(true);console.log(slideShow)}}> Slide </button>
+            <button className="btn-slide-turnon" style={{slideShow}?{backgroundColor:"green"}:{backgroundColor:"red"}} onClick={()=>{setSlideShow(true);console.log(slideShow)}}> Slide </button>
             <nav className='navbar-home'>
                     <button onClick={()=>{setPosition(0);setSlideShow(false)}}>Home</button>
                     <button onClick={()=>{setSlideShow(false);setPosition(-100)}}>História</button>
@@ -94,7 +94,7 @@ const Home = () => {
                 <div className='group_section'>
                     <div className='testecentral'>
                         <div className='history '>
-                            <img className='img-section crescendo' src={photo4}></img>
+                            
 
                             <div className='txt-section crescendo'>
                                 <h1>O que nós queremos?</h1>
@@ -116,7 +116,7 @@ const Home = () => {
                                 <p>Estar entre as melhores escolas de música do Brasil.
                                 </p>
                             </div>
-                            <img className='img-section crescendo' src={photo2}></img>
+                           
                             <div className='txt-section crescendo'>
                                 <h1>Valores</h1>
                                 <p>Focamos no sucesso do aluno, na qualidade da sua aprendizagem de forma individualizada e personalizada e o seu encantamento em relação à sua experiência na nossa escola.
@@ -139,8 +139,8 @@ const Home = () => {
 
                                 </p>
                             </div>
-
                             <img className='img-section crescendo' src={photo3}></img>
+                            <img className='img-section crescendo' src={photo2}></img>
 
                             
                            
@@ -159,29 +159,13 @@ const Home = () => {
                             </p>
                         </div>
                         <img className='img-section crescendo' src={photo5}></img>
+                        <img className='img-section crescendo' src={photo4}></img>
 
 
 
-
-                            <div className='txt-section crescendo'>
-                                <h1>Compromisso com o resultado</h1>
-                                <p>Atuamos de forma engajada e comprometida e priorizamos a solução dos problemas enfrentados pelo aluno, através da nossa atuação.
-                                </p>
-                            </div>
-                            <div>
-                                <img className='img-section crescendo' src={photo1}></img>
-                            </div>
-                            <div className='txt-section crescendo'>
-                                <h1>Simplicidade e Foco</h1>
-                                <p>Procedemos de forma simples e objetiva, buscando desburocratizar e descomplicar, e colocamos os processos e projetos a serviço das pessoas, sempre de forma clara e transparente.
-                                </p>
-                            </div>
-                            <img className='img-section crescendo' src={photo5}></img>
-
+                           
                         </div>
                     </div>
-                </div>
-
                 </div>
                 <div className='contacts'>
                     <div className='box-contacts'>
@@ -196,6 +180,9 @@ const Home = () => {
                     
                 </div>
 
+                </div>
+                
+
 
 
             </div>
@@ -204,7 +191,7 @@ const Home = () => {
 
 
 
-        </div >
+       
     );
 }
 export default Home;
