@@ -13,37 +13,53 @@ import { useState, useEffect } from 'react'
 
 const Home = () => {
     const [position, setPosition] = useState(0)
+    const [slideShow, setSlideShow] = useState(true);
+    const slideShowPosition = () => {
+        if (slideShow) {
+            if (position > -300) {
+                setPosition(position - 100);
+                console.log(position)
+            } else {
+                setPosition(0);
+            }
 
-    const slideShow = () => {
-        if (position > -300) {
-            setPosition(position - 100);
-            console.log(position)
-        } else {
-            setPosition(0);
         }
     }
-    const setSlideShow = () => {
-        setTimeout(function () {
-            slideShow();
-        }, 5000)
-    }
+    // const slideShowSet = () => {
+
+        
+            
+        
+        
+    // }
+
     const handleLogin = () => {
         window.location.pathname = "/login";
     }
+    const handleHome = () => {
+        
+       
+    }
     useEffect(() => {
-        setSlideShow()
-    }, [position]);
+
+        setTimeout(function () {
+            if (slideShow) {
+            slideShowPosition();}
+        }, 5000)
+    }, [position, slideShow]);
 
 
     return (
         <div className='home-container'>
+            <button onClick={()=>{setSlideShow(true)}}> Slide </button>
+            <nav className='navbar-home'>
+                    <button onClick={()=>{setPosition(0);setSlideShow(false)}}>Home</button>
+                    <button onClick={()=>{setSlideShow(false);setPosition(-100)}}>História</button>
+                    <button onClick={()=>{setSlideShow(false);setPosition(-200)}}>Visão</button>
+                    <button onClick={()=>{setSlideShow(false);setPosition(-300)}}>Contato</button>
+            </nav>
             <div className='home' style={{ transform: `translateX(${position}vw)` }}>
-                <nav className='navbar-home'>
-                    <button onClick={handleLogin}>Login</button>
-                    <button onClick={handleLogin}>Nossa história</button>
-                    <button onClick={handleLogin}>Contato</button>
-                    <button onClick={handleLogin}>Login</button>
-                </nav>
+                
                 <div className='bg-1-home'>
                     <div className='transparency-bg-1-home'>
                         <div className='container-logotipo'>
@@ -73,75 +89,75 @@ const Home = () => {
                     <img id='photopg2' className='crescendo' src={photox} />
                 </div>
                 <div className='group_section'>
-                <div className='testecentral'>
-                    <div className='history '>
-                    <img className='img-section crescendo' src={photo4}></img>
-                        
-                        <div className='txt-section crescendo'>
-                            <h1>O que nós queremos?</h1>
-                            <ul>
-                                <li>Realizar sonhos!</li>
-                                <li>Plantar a semente da música.</li>
-                                <li>Promover qualidade de vida.</li>
-                            </ul>
+                    <div className='testecentral'>
+                        <div className='history '>
+                            <img className='img-section crescendo' src={photo4}></img>
 
-                        </div>
-                        
-                        <div className='txt-section crescendo'>
-                            <h1>Missão</h1>
-                            <p>Contribuir para difusão da educação musical, formação de público, na excelência do ensino livre de música e visando a valorização da arte e da cultura e de toda cadeia produtiva.
-                            </p>
-                        </div>
-                        <div className='txt-section crescendo'>
-                            <h1>Visão</h1>
-                            <p>Estar entre as melhores escolas de música do Brasil.
-                            </p>
-                        </div>
-                        <img className='img-section crescendo' src={photo2}></img>
-                        <div className='txt-section crescendo'>
-                            <h1>Valores</h1>
-                            <p>Focamos no sucesso do aluno, na qualidade da sua aprendizagem de forma individualizada e personalizada e o seu encantamento em relação à sua experiência na nossa escola.
-                            </p>
-                        </div>
-                        <div className='txt-section crescendo'>
-                            <h1>Ética</h1>
-                            <p>Agimos e comunicamos de acordo com os valores que norteiam uma conduta íntegra, respeitando as normas públicas e os regulamentos internos, de forma clara,  principalmente nas questões financeiras adotamos uma conduta justa e transparente diante de todos.
-                            </p>
-                        </div>
+                            <div className='txt-section crescendo'>
+                                <h1>O que nós queremos?</h1>
+                                <ul>
+                                    <li>Realizar sonhos!</li>
+                                    <li>Plantar a semente da música.</li>
+                                    <li>Promover qualidade de vida.</li>
+                                </ul>
 
-                        <div className='txt-section crescendo'>
-                            <h1>Confiança Mútua</h1>
-                            <p>Propiciamos um ambiente de confiança mútua e encorajamos a participação, sobretudo visando a evolução individual e objetivamos a melhoria contínua em tudo o que fazemos.
-                            </p>
-                        </div>
-                        <div className='txt-section crescendo'>
-                            <h1>Respeito</h1>
-                            <p>Agimos de forma respeitosa, sobretudo em relação à vida, à ciência e ao ser humano, na sua diversidade, vedando-se qualquer ato ou prática discriminatória. Somos responsáveis por todos em nossa volta, e agimos de forma a desenvolver e ampliar o senso de pertencimento e comunidade.
+                            </div>
 
-                            </p>
-                        </div>
-                       
+                            <div className='txt-section crescendo'>
+                                <h1>Missão</h1>
+                                <p>Contribuir para difusão da educação musical, formação de público, na excelência do ensino livre de música e visando a valorização da arte e da cultura e de toda cadeia produtiva.
+                                </p>
+                            </div>
+                            <div className='txt-section crescendo'>
+                                <h1>Visão</h1>
+                                <p>Estar entre as melhores escolas de música do Brasil.
+                                </p>
+                            </div>
+                            <img className='img-section crescendo' src={photo2}></img>
+                            <div className='txt-section crescendo'>
+                                <h1>Valores</h1>
+                                <p>Focamos no sucesso do aluno, na qualidade da sua aprendizagem de forma individualizada e personalizada e o seu encantamento em relação à sua experiência na nossa escola.
+                                </p>
+                            </div>
+                            <div className='txt-section crescendo'>
+                                <h1>Ética</h1>
+                                <p>Agimos e comunicamos de acordo com os valores que norteiam uma conduta íntegra, respeitando as normas públicas e os regulamentos internos, de forma clara,  principalmente nas questões financeiras adotamos uma conduta justa e transparente diante de todos.
+                                </p>
+                            </div>
+
+                            <div className='txt-section crescendo'>
+                                <h1>Confiança Mútua</h1>
+                                <p>Propiciamos um ambiente de confiança mútua e encorajamos a participação, sobretudo visando a evolução individual e objetivamos a melhoria contínua em tudo o que fazemos.
+                                </p>
+                            </div>
+                            <div className='txt-section crescendo'>
+                                <h1>Respeito</h1>
+                                <p>Agimos de forma respeitosa, sobretudo em relação à vida, à ciência e ao ser humano, na sua diversidade, vedando-se qualquer ato ou prática discriminatória. Somos responsáveis por todos em nossa volta, e agimos de forma a desenvolver e ampliar o senso de pertencimento e comunidade.
+
+                                </p>
+                            </div>
+
                             <img className='img-section crescendo' src={photo3}></img>
-                            
-                           
-                        
-                        <div className='txt-section crescendo'>
-                            <h1>Compromisso com o resultado</h1>
-                            <p>Atuamos de forma engajada e comprometida e priorizamos a solução dos problemas enfrentados pelo aluno, através da nossa atuação.
-                            </p>
-                        </div>
-                        <div>
-                            <img className='img-section crescendo' src={photo1}></img>
-                        </div>
-                        <div className='txt-section crescendo'>
-                            <h1>Simplicidade e Foco</h1>
-                            <p>Procedemos de forma simples e objetiva, buscando desburocratizar e descomplicar, e colocamos os processos e projetos a serviço das pessoas, sempre de forma clara e transparente.
-                            </p>
-                        </div>
-                        <img className='img-section crescendo' src={photo5}></img>
 
+
+
+                            <div className='txt-section crescendo'>
+                                <h1>Compromisso com o resultado</h1>
+                                <p>Atuamos de forma engajada e comprometida e priorizamos a solução dos problemas enfrentados pelo aluno, através da nossa atuação.
+                                </p>
+                            </div>
+                            <div>
+                                <img className='img-section crescendo' src={photo1}></img>
+                            </div>
+                            <div className='txt-section crescendo'>
+                                <h1>Simplicidade e Foco</h1>
+                                <p>Procedemos de forma simples e objetiva, buscando desburocratizar e descomplicar, e colocamos os processos e projetos a serviço das pessoas, sempre de forma clara e transparente.
+                                </p>
+                            </div>
+                            <img className='img-section crescendo' src={photo5}></img>
+
+                        </div>
                     </div>
-                </div>
                 </div>
 
             </div>
