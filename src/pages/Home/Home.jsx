@@ -51,7 +51,7 @@ const Home = () => {
 
     return (
         <div className='home-container'>
-            <button onClick={()=>{setSlideShow(true)}}> Slide </button>
+            <button onClick={()=>{setSlideShow(true);console.log(slideShow)}}> Slide </button>
             <nav className='navbar-home'>
                     <button onClick={()=>{setPosition(0);setSlideShow(false)}}>Home</button>
                     <button onClick={()=>{setSlideShow(false);setPosition(-100)}}>História</button>
