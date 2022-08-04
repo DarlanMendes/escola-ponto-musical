@@ -1,5 +1,8 @@
-*{
-    /* border: 1px solid red; */
+body{
+    background-image: url(../../assets/photoinstagram/bckgrnd1.jpg);
+    background-size:cover;
+    background-position: center;
+    width: 100vw;
 }
 .home-container{
     height:100vh;
@@ -30,26 +33,25 @@
 .transparency-bg-1-home{
     display: flex;
     flex-wrap: wrap;
-    background-image: linear-gradient(to left, black 30%, transparent);
+    /* background-image: linear-gradient(to left, black 30%, transparent); */
     height: 100vh;
 }
 .bg-1-home{
     display: flex;
     flex-wrap: wrap;
-    justify-content:end;
-    background-image: url("../../assets/violao-background1.jpg"); 
-
-    background-repeat: no-repeat;
-    background-size: cover;
+    justify-content:start;
     height:100vh;
     width: 100vw;
+    background-image: linear-gradient(to bottom, black 30%, transparent);
 }
 .logo-school-home{
-    width: 50vh;
+    width: 30vw;
     padding: 150px;
     display: flex;
     align-items: end;
-    justify-content: end;
+    justify-content: star;
+    /* background-image: linear-gradient(to bottom, black 30%, transparent); */
+    border-radius: 30px;
    
 }
 .logo-school-home:hover{
@@ -61,8 +63,8 @@
 .container-logotipo{
     display: flex;
     flex-direction: column;
-  justify-content: end;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
   width:100vw;
  
 
@@ -88,7 +90,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(rgb(101, 193, 255),white);
     width:100vw;
 }
 
@@ -99,36 +100,41 @@
     font-weight: 700;
     color: rgb(255, 255, 255);
     text-align: start;
-   background-color: rgba(0, 0, 0, 0.575);
+   
    border-radius: 20px;
    transform:translateX(-30px);
 }
 
+.pg2{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    
+}
 .txt2{
     font-size: 20px;
     font-weight: 700;
     color: black;
     text-align: center;
     margin-bottom: 10px;
+    background-color: rgba(245, 245, 220, 0.671);
+    border-radius: 40px;
+    box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.507);
+    padding: 30px;
+    width: 40vw;
+    
 }
-
-.hst{
- max-width: 700px;
-}
-
-.pg2{
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-#photopg2{
+.photopg2{
     border-radius: 20px;
-   height: 400px;
-   width:600px;
-    padding: auto;
+    width: 40vw;
+    
+}
+
+#fototurma{
+    border-radius: 30px;
+    width: 40vw;
 }
 
 .history{
@@ -150,34 +156,43 @@
     width: 100vw;
 }
 
-.testecentral{
+/* .testecentral{
    background-image: url(../../assets/photoinstagram/bckgrnd1.jpg);
    background-size:cover;
    background-position: center;
    width: 100vw;
-}
+} */
 
 .img-section{
-    height: 20vh;
+    width: 25vh;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.img-section2{
+    width: 53vh;
     border-radius: 20px;
     margin: 20px;
 }
 
 .txt-section{
-    min-width: 300px;
-    width: 33vh;
-    background-color: rgba(0, 153, 255, 0.548);
-    border-radius: 20px;
+   
+    font-weight: 700;
+    color: black;
+    text-align: center;
     margin: 8px;
+    background-color: rgba(245, 245, 220, 0.671);
+    border-radius: 20px;
+    box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.507);
     padding: 8px;
-    color: rgb(255, 255, 255);   
-}
+    width: 25vh;
+   }
 
-.txt-section p,.txt-section h1,.txt-section li{
+/* .txt-section p,.txt-section h1,.txt-section li{
     text-align: center;
     font-weight: 400;
     color: antiquewhite;
-}
+} */
 
 .crescendo:hover{
     transition: 1s;
@@ -185,4 +200,26 @@
   }
 
 
+.contacts{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    width: 100vw;
+
+}
+
+.box-contacts{
+    width: 60vw;
+    height: 60vh;
+    background-color: rgba(245, 245, 220, 0.671);
+    border-radius: 40px;
+    box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.507);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+}
+
+.box-contacts-img{
+    width: 5vw;
+}
 
