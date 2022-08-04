@@ -17,7 +17,18 @@ body{
     transition:ease 1.2s; 
 }
 .navbar-home{
-    width:100vw;
+    position:fixed;
+    top:0;
+    left:0;
+    width:90vw;
+    padding:0 40px;
+}
+.navbar-home button{
+    border:transparent;
+    margin:0 20px;
+    font-size: large;
+    color:white;
+    background-color: transparent;
 }
 .transparency-bg-1-home{
     display: flex;
@@ -84,6 +95,7 @@ body{
 
 
 .txt-pg1-home{
+    margin:0 50px 100px 0; 
     font-size: 56px;
     font-weight: 700;
     color: rgb(255, 255, 255);
