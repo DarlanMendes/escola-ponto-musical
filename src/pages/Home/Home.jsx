@@ -63,6 +63,7 @@ const Home = () => {
                 <button onClick={() => { setSlideShow(false); setPosition(-100) }}>História</button>
                 <button onClick={() => { setSlideShow(false); setPosition(-200) }}>Visão</button>
                 <button onClick={() => { setSlideShow(false); setPosition(-300) }}>Contato</button>
+                <button onClick={()=>{window.location.pathname='/Login'}}>Login</button>
             </nav>
             <div className='home' style={{ transform: `translateX(${position}vw)` }}>
 

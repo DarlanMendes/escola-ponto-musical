@@ -5,6 +5,7 @@ import Home from './pages/Home/Home';
 import Student from './pages/Student/Student';
 import Teacher from './pages/Teacher/Teacher';
 import Manager from './pages/Manager/Manager';
+import Login from './pages/Login/Login'
 import Navbar from './components/Navbar';
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
           <Route path="/Student" element={<Student />} />
           <Route path="/Teacher" element={<Teacher />} />
           <Route path="/Manager" element={<Manager />} />
-
+          <Route path='/Login' element={<Login/>}/>
 
 
         </Routes>
