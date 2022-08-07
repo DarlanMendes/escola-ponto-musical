@@ -11,6 +11,7 @@ import photo5 from '../../assets/photoinstagram/ft5-crianca.PNG'
 import iconwhats from '../../assets/icon/whatsapp.png'
 import iconinsta from '../../assets/icon/instagram.png'
 import iconface from '../../assets/icon/facebook.png'
+import maps from '../../assets/Capturar.PNG'
 import { useState, useEffect } from 'react'
 
 
@@ -30,39 +31,40 @@ const Home = () => {
     }
     // const slideShowSet = () => {
 
-        
-            
-        
-        
+
+
+
+
     // }
 
     const handleLogin = () => {
         window.location.pathname = "/login";
     }
     const handleHome = () => {
-        
-       
+
+
     }
     useEffect(() => {
         console.log("entrou")
         setTimeout(function () {
             if (slideShow) {
-            slideShowPosition();}
+                slideShowPosition();
+            }
         }, 5000)
     }, [position, slideShow]);
 
 
     return (
         <div className='home-container'>
-            <button className="btn-slide-turnon" style={{slideShow}?{backgroundColor:"green"}:{backgroundColor:"red"}} onClick={()=>{setSlideShow(true);console.log(slideShow)}}> Slide </button>
+            <button className="btn-slide-turnon" style={{ slideShow } ? { backgroundColor: "green" } : { backgroundColor: "red" }} onClick={() => { setSlideShow(true); console.log(slideShow) }}> Slide </button>
             <nav className='navbar-home'>
-                    <button onClick={()=>{setPosition(0);setSlideShow(false)}}>Home</button>
-                    <button onClick={()=>{setSlideShow(false);setPosition(-100)}}>História</button>
-                    <button onClick={()=>{setSlideShow(false);setPosition(-200)}}>Visão</button>
-                    <button onClick={()=>{setSlideShow(false);setPosition(-300)}}>Contato</button>
+                <button onClick={() => { setPosition(0); setSlideShow(false) }}>Home</button>
+                <button onClick={() => { setSlideShow(false); setPosition(-100) }}>História</button>
+                <button onClick={() => { setSlideShow(false); setPosition(-200) }}>Visão</button>
+                <button onClick={() => { setSlideShow(false); setPosition(-300) }}>Contato</button>
             </nav>
             <div className='home' style={{ transform: `translateX(${position}vw)` }}>
-                
+
                 <div className='bg-1-home'>
                     <div className='transparency-bg-1-home'>
                         <div className='container-logotipo'>
@@ -94,7 +96,7 @@ const Home = () => {
                 <div className='group_section'>
                     <div className='testecentral'>
                         <div className='history '>
-                            
+
 
                             <div className='txt-section crescendo'>
                                 <h1>O que nós queremos?</h1>
@@ -116,7 +118,7 @@ const Home = () => {
                                 <p>Estar entre as melhores escolas de música do Brasil.
                                 </p>
                             </div>
-                           
+
                             <div className='txt-section crescendo'>
                                 <h1>Valores</h1>
                                 <p>Focamos no sucesso do aluno, na qualidade da sua aprendizagem de forma individualizada e personalizada e o seu encantamento em relação à sua experiência na nossa escola.
@@ -142,56 +144,65 @@ const Home = () => {
                             <img className='img-section crescendo' src={photo3}></img>
                             <img className='img-section crescendo' src={photo2}></img>
 
-                            
-                           
-                        
-                        <div className='txt-section crescendo'>
-                            <h1>Compromisso com o resultado</h1>
-                            <p>Atuamos de forma engajada e comprometida e priorizamos a solução dos problemas enfrentados pelo aluno, através da nossa atuação.
-                            </p>
-                        </div>
-                        <div>
-                            <img className='img-section2 crescendo' src={photo1}></img>
-                        </div>
-                        <div className='txt-section crescendo'>
-                            <h1>Simplicidade e Foco</h1>
-                            <p>Procedemos de forma simples e objetiva, buscando desburocratizar e descomplicar, e colocamos os processos e projetos a serviço das pessoas, sempre de forma clara e transparente.
-                            </p>
-                        </div>
-                        <img className='img-section crescendo' src={photo5}></img>
-                        <img className='img-section crescendo' src={photo4}></img>
 
 
 
-                           
+                            <div className='txt-section crescendo'>
+                                <h1>Compromisso com o resultado</h1>
+                                <p>Atuamos de forma engajada e comprometida e priorizamos a solução dos problemas enfrentados pelo aluno, através da nossa atuação.
+                                </p>
+                            </div>
+                            <div>
+                                <img className='img-section2 crescendo' src={photo1}></img>
+                            </div>
+                            <div className='txt-section crescendo'>
+                                <h1>Simplicidade e Foco</h1>
+                                <p>Procedemos de forma simples e objetiva, buscando desburocratizar e descomplicar, e colocamos os processos e projetos a serviço das pessoas, sempre de forma clara e transparente.
+                                </p>
+                            </div>
+                            <img className='img-section crescendo' src={photo5}></img>
+                            <img className='img-section crescendo' src={photo4}></img>
+
+
+
+
                         </div>
                     </div>
                 </div>
                 <div className='contacts'>
                     <div className='box-contacts'>
-                       
-                        <img className='box-contacts-img' src={iconwhats}></img>
-                        <img className='box-contacts-img' src={iconinsta}></img>
-                        <img className='box-contacts-img' src={iconface}></img>
+                        <div className='contatos-lado-esquerdo'>
+                            <div className='icon-e-telefone'>
+                                <a href='https://api.whatsapp.com/send?l=pt-BR&utm_source=email&utm_campaign=mc-fe-cw-em1%E2%98%8E=5585989269112&text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20curso%20de'><img className='box-contacts-img' src={iconwhats}></img></a>
+                                
+                                <a href='https://www.instagram.com/escolademusicaponto/'><img className='box-contacts-img' src={iconinsta}></img></a>
+                                <a href='https://www.facebook.com/escolademusicapontomusical'><img className='box-contacts-img' src={iconface}></img></a>
+                            </div>
+                            <div className='cnt-ld-esqrdo-txt' ><span >R. Rio Grande do Sul, 860 - Panamericano, Fortaleza - CE, 60441-380</span></div>
+                            <div className='cnt-ld-esqrdo-txt'><span >(85)9 8926 9112</span></div>
+                        </div>
+                        <div className='contatos-lado-direito'>
+                        <a href='https://g.page/escolademusicapontomusical?share'><img className='contatos-lado-direito-img' src={maps} /></a>
+                        </div>
 
-                     
-                        
+
+
                     </div>
-                    
-                </div>
 
                 </div>
-                
-
-
 
             </div>
 
 
 
 
+        </div>
 
-       
+
+
+
+
+
     );
 }
 export default Home;

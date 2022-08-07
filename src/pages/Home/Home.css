@@ -241,17 +241,54 @@ body{
 }
 
 .box-contacts{
-    width: 60vw;
+    width: 80vw;
     height: 60vh;
     background-color: rgba(245, 245, 220, 0.671);
     border-radius: 40px;
     box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.507);
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;  
     justify-content: space-around;
-    align-items: center;   
 }
 
 .box-contacts-img{
-    width: 5vw;
+    width: 50px;
+}
+
+.contatos-lado-esquerdo{
+    width: auto;
+    max-width: 300px;
+    font-size:20px;
+    font-weight: 700;
+    display: block;
+}
+
+.icon-e-telefone{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25%;
+}
+.contatos-lado-direito{
+    width:auto;
+    max-height: auto;    
+    
+    font-size: 70px;
+    text-align: center;
+}
+@media screen and (max-width: 500px;) {
+    .contatos-lado-direito-img{
+        width: 100vw;
+    
+    };
+   
+}
+.contatos-lado-direito-img{
+    width: 40vw;
+    height: 60 vh;
+
+}
+.cnt-ld-esqrdo-txt{
+    text-align: center;
 }
 
