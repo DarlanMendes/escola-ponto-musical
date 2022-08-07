@@ -15,6 +15,7 @@ import maps from '../../assets/Capturar.PNG'
 import { useState, useEffect } from 'react'
 
 
+
 const Home = () => {
     const [position, setPosition] = useState(0)
     const [slideShow, setSlideShow] = useState(true);
