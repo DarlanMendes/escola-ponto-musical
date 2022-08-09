@@ -23,14 +23,15 @@ export default {
     console.log('aluno', alunos.cpf)
     // Add a new document in collection "cities"
     return await setDoc(doc(db, collection, alunos.cpf), {
-      nome: alunos.nome,
-      email: alunos.email,
-      telefone: alunos.telefone,
-      endereco: alunos.Endereco,
-      cpf: alunos.cpf,
-      dia: alunos.horario.dia,
-      horario: alunos.horario.horario,
-      periodo: alunos.periodoContrato
+      alunos
+      // nome: alunos.nome,
+      // email: alunos.email,
+      // telefone: alunos.telefone,
+      // endereco: alunos.Endereco,
+      // cpf: alunos.cpf,
+      // dia: alunos.horario.dia,
+      // horario: alunos.horario.horario,
+      // periodo: alunos.periodoContrato
     });
 
   }

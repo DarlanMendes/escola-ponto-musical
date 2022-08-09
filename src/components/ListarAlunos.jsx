@@ -34,14 +34,14 @@ const ListarAlunos = ({alunosListados,setAlunosListados}) => {
             {alunosListados&&alunosListados.map((item,key)=>(
                 <div key={key} className="alunos--container"> 
                 
-                <label>Nome:{item.nome}</label>
-                <label>CPF::{item.cpf}</label>
-                <label>Endereço:{item.endereco}</label>
-                <label>E-mail::{item.email}</label>
-                <label>Telefone:{item.telefone}</label>
-                <label>Horário  Dias:{item.dia}  Horário:{item.horario}</label>
-                <label>Período de contrato:{item.periodo}</label>
-            
+                <label>Nome:{item.alunos.nome}</label>
+                <label>CPF::{item.alunos.cpf}</label>
+                <label>Endereço:{item.alunos.Endereco}</label>
+                <label>E-mail::{item.alunos.email}</label>
+                <label>Telefone:{item.alunos.telefone}</label>
+                <label>Horário  Dias:{item.alunos.dia}  Horário:{item.horario}</label>
+                <label>Período de contrato:{item.alunos.periodoContrato}</label>
+               
                 </div>
             ))}
              <button onClick={mostrar} > Listar alunos</button>

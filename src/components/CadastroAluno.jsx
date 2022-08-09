@@ -2,7 +2,7 @@ import { useState } from "react";
 import Api from '../Api'
 import './CadastroAluno.css';
 const CadastroAluno = () => {
-    const [aluno, setAluno] = useState({ nome: '', email: '', telefone: '', Endereco: '', cpf: '', horario: { dia: '', horario: '' }, periodoContrato: '' });
+    const [aluno, setAluno] = useState({ nome: '', email: '', telefone: '', Endereco: '', cpf: '', dia: '', horario: '' , periodoContrato: '' });
 
     const handleCadastro = () => {
        
@@ -41,11 +41,11 @@ const CadastroAluno = () => {
                     </label>
                     <label>
                         Dia de aula:
-                        <input type='text' onChange={(e)=>{aluno.horario.dia=e.target.value}}></input>
+                        <input type='text' onChange={(e)=>{aluno.dia=e.target.value}}></input>
                     </label>
                     <label>
                         Horário da aula:
-                        <input type='text'onChange={(e)=>{aluno.horario.horario=e.target.value}}></input>
+                        <input type='text'onChange={(e)=>{aluno.horario=e.target.value}}></input>
                     </label>
                     <label>
                         Período de contrato:
