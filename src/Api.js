@@ -1,5 +1,5 @@
 import { app } from './Firebase'
-import { signInWithEmailAndPassword } from "firebase/auth";
+import { signInWithEmailAndPassword,createUserWithEmailAndPassword } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 import { doc, setDoc } from "firebase/firestore";
 import { collection, getDocs } from "firebase/firestore";
@@ -14,6 +14,10 @@ export default {
     return await signInWithEmailAndPassword(auth, email, password);
 
 
+
+  }
+  ,SignUp:async (auth, email, password)=>{
+    return await createUserWithEmailAndPassword(auth,email,password);
 
   }
   , Update: async (collection, aluno) => {
