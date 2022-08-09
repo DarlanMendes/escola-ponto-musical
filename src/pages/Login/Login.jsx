@@ -1,53 +1,60 @@
 
 import { useState } from 'react';
 import Api from '../../Api'
-import { getAuth} from "firebase/auth";
+import { getAuth } from "firebase/auth";
+import './Login.css';
+import { useNavigate } from 'react-router-dom';
 const Login = () => {
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [confirmPassword, setConfirmPassword] = useState('');
+    const [warning, setWarning] = useState()
     const auth = getAuth();
+    let navigate = useNavigate();
 
-
-    function handleLogin(){
-        if(password===confirmPassword){
-            Api.Login(auth,email,password).then((userCredential) => {
+    const handleLogin = async () => {
+        if ((password !== '' || password !== null) && email !== '') {
+            Api.Login(auth, email, password).then((userCredential) => {
                 // Signed in
                 const user = userCredential.user;
-               console.log(userCredential)
+                console.log(userCredential);
+                navigate('/Manager');
             })
-            .catch((error) => {
-                const errorCode = error.code;
-                const errorMessage = error.message;
-                console.log(errorMessage);
-            });
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    alert(errorMessage);
+                });
+
+
         }
+        else {
+            setWarning('Por favor, preencha todos os campos')
+        }
+       
     }
 
     return (
 
 
-        
+
 
         <div className="login--page">
-            <input type="text" placeholder='Digite seu e-mail' onChange={(e) => {
-                setEmail(e.target.value);
-            }
-            } />
+            <div className='login--page--container'>
 
+                <input type="text" placeholder='Digite seu e-mail' className='login--email' onChange={(e) => {
+                    setEmail(e.target.value);
+                }
+                } />
 
-            <input type="password" placeholder='Digite sua senha' onChange={(e) => {
-                setPassword(e.target.value)
-            }}></input>
+                <input type="password" placeholder='Digite sua senha' className='login--password' onChange={(e) => {
+                    setPassword(e.target.value)
+                }}></input>
 
-            <input type="password" placeholder='Digite sua senha' onChange={(e) => {
-                setConfirmPassword(e.target.value)
-            }}></input>
+                <span>{warning}</span>
 
-
-
-            <button onClick={handleLogin}>Fazer Login</button>
+                <button onClick={handleLogin}>Fazer Login</button>
+            </div>
         </div>
     )
 }

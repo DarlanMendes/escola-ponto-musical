@@ -1,0 +1,32 @@
+.listar--alunos--container{
+    height:60vh;
+    width:60vw;
+    overflow-y: scroll;
+    background-color: rgba(0, 0, 0, 0.479);
+}
+.alunos--container label{
+    color:white;
+    margin: 10px 15px;
+    width:60vw;
+    
+}
+
+.alunos--container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+    
+  
+    overflow-x: hidden;
+}
+.listar--alunos--container button{
+    position:fixed;
+    top:80%;
+    right:20%;
+    
+}
