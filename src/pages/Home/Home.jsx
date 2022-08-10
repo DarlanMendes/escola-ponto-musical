@@ -75,7 +75,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className='pg2'>
+                <div className='pg2 barra-rolagem-div'>
                     <div className='txt2'>
                         <h1>Um pouco da Escola de Música Ponto Musical.</h1>
                         <ul>
@@ -95,7 +95,7 @@ const Home = () => {
                     </div>
                     <div className='photopg2'><img id='fototurma' className='crescendo' src={photox} /></div>
                 </div>
-                <div className='group_section'>
+                <div className='group_section barra-rolagem-div'>
                     <div className='testecentral'>
                         <div className='history '>
 
@@ -110,7 +110,7 @@ const Home = () => {
 
                             </div>
                             <div>
-                                <img className='img-section2 crescendo' src={photo1}></img>
+                                <img className='img-section crescendo' src={photo1}></img>
                             </div>
 
                             <div className='txt-section crescendo'>
