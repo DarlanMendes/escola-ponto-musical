@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Api from '../../Api'
 import { getAuth } from "firebase/auth";
 import './Login.css';
+import logologin from '../../assets/logo-removebg-preview.png'
 import { useNavigate } from 'react-router-dom';
 const Login = () => {
 
@@ -41,7 +42,7 @@ const Login = () => {
 
         <div className="login--page">
             <div className='login--page--container'>
-
+<img className='logo-login' src={logologin}></img>
                 <input type="text" placeholder='Digite seu e-mail' className='login--email' onChange={(e) => {
                     setEmail(e.target.value);
                 }
@@ -52,9 +53,12 @@ const Login = () => {
                 }}></input>
 
                 <span>{warning}</span>
+                
 
-                <button onClick={handleLogin}>Fazer Login</button>
+                <div><button onClick={handleLogin}>Fazer Login</button></div>
+                <div className='corpy'><span>Ponto Musical - Sistema desenvolvido pela DLA</span></div>
             </div>
+  
         </div>
     )
 }
