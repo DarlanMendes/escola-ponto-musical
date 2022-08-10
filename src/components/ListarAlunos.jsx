@@ -38,6 +38,7 @@ const ListarAlunos = ({alunosListados,setAlunosListados}) => {
                 <label>CPF::{item.alunos.cpf}</label>
                 <label>Endereço:{item.alunos.Endereco}</label>
                 <label>E-mail::{item.alunos.email}</label>
+                <label>Senha:{item.alunos.senha}</label>
                 <label>Telefone:{item.alunos.telefone}</label>
                 <label>Horário  Dias:{item.alunos.dia}  Horário:{item.horario}</label>
                 <label>Período de contrato:{item.alunos.periodoContrato}</label>
