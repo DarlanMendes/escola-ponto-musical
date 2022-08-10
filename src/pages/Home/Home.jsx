@@ -75,7 +75,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className='pg2'>
+                <div className='pg2 barra-rolagem-div'>
                     <div className='txt2'>
                         <h1>Um pouco da Escola de Música Ponto Musical.</h1>
                         <ul>
@@ -95,7 +95,7 @@ const Home = () => {
                     </div>
                     <div className='photopg2'><img id='fototurma' className='crescendo' src={photox} /></div>
                 </div>
-                <div className='group_section'>
+                <div className='group_section barra-rolagem-div'>
                     <div className='testecentral'>
                         <div className='history '>
 
@@ -108,6 +108,9 @@ const Home = () => {
                                     <li>Promover qualidade de vida.</li>
                                 </ul>
 
+                            </div>
+                            <div>
+                                <img className='img-section crescendo' src={photo1}></img>
                             </div>
 
                             <div className='txt-section crescendo'>
@@ -154,9 +157,7 @@ const Home = () => {
                                 <p>Atuamos de forma engajada e comprometida e priorizamos a solução dos problemas enfrentados pelo aluno, através da nossa atuação.
                                 </p>
                             </div>
-                            <div>
-                                <img className='img-section2 crescendo' src={photo1}></img>
-                            </div>
+                           
                             <div className='txt-section crescendo'>
                                 <h1>Simplicidade e Foco</h1>
                                 <p>Procedemos de forma simples e objetiva, buscando desburocratizar e descomplicar, e colocamos os processos e projetos a serviço das pessoas, sempre de forma clara e transparente.

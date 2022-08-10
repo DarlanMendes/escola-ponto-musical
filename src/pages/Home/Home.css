@@ -1,5 +1,5 @@
 body {
-    background-image: url(../../assets/photoinstagram/bckgrnd1.jpg);
+    background-image: url('../../assets/photoinstagram/bckgrnd1.jpg');
     background-size: cover;
     background-position: center;
     width: 100vw;
@@ -73,7 +73,8 @@ body {
     justify-content: center;
     /* background-image: linear-gradient(to bottom, black 30%, transparent); */
     border-radius: 30px;
-
+    min-width: 320px;
+   
 }
 
 .logo-school-home:hover {
@@ -142,13 +143,32 @@ body {
 
 .txt2 {
     margin-top: 90px;
+    width:100vw;
+    height: 90vh;
+    margin-top: 10vh;
+}
+
+
+.txt-pg1-home{
+    margin:0 0px 0px 0; 
+    font-size: 4vh;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    text-align:center;
+    border-radius: 20px;
+  
+}
+
+.txt2{
+    
+
     align-items: center;
     text-align: center;
     justify-content: center;
     font-size: auto;
     font-weight: 700;
     color: black;
-    margin-bottom: 10px;
+    margin-right: 10px;
     background-color: rgba(245, 245, 220, 0.671);
     border-radius: 40px;
     box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.507);
@@ -178,6 +198,8 @@ body {
 #fototurma {
     border-radius: 30px;
     width: 40vw;
+    min-width: 330px;
+
 }
 
 .history {
@@ -192,14 +214,16 @@ body {
 
 }
 
+
 .group_section {
     display: flex;
     justify-content: center;
 
     position: relative;
     height: 90vh;
+    width: 95vw;
+    padding: auto;
 
-    width: 100vw;
 }
 
 
@@ -207,6 +231,7 @@ body {
     height: auto;
     max-height: 150px;
     width: 10vw;
+    max-height: 200px;
     border-radius: 20px;
     margin: 10px;
     max-width: 350px;
@@ -214,8 +239,10 @@ body {
 
 .img-section2 {
     width: 20vw;
+    height: auto;
+    max-height: 200px;
     border-radius: 20px;
-    margin: 20px;
+    margin: 10px;
     min-width: 350px;
 }
 
@@ -223,6 +250,8 @@ body {
     margin-top: 70px;
     height: 26vh;
     width: 35vw;
+    min-width: 350px;
+    margin-top: 70px;
     padding: 5px;
     width: 25vh;
     font-weight: 28px;
@@ -232,6 +261,19 @@ body {
     background-color: rgba(245, 245, 220, 0.671);
     border-radius: 20px;
     box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.507);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    
+   }
+
+.txt-section h1{
+    font-size:20px;
+    margin:5px 0;
+    
+    text-align: center;
 
 }
 
@@ -244,6 +286,8 @@ body {
     font-size: 13px;
     width: 180px;
     margin: 0;
+    text-align: center;
+    
 }
 
 .crescendo:hover {
@@ -307,7 +351,8 @@ body {
    
 }
 
-.contatos-lado-direito-img {
+
+.contatos-lado-direito-img{
     width: 27rem;
     height: 20rem;
 
@@ -316,3 +361,7 @@ body {
 .cnt-ld-esqrdo-txt {
     text-align: center;
 }
+
+
+
+
