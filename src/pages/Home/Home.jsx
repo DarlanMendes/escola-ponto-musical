@@ -109,6 +109,9 @@ const Home = () => {
                                 </ul>
 
                             </div>
+                            <div>
+                                <img className='img-section2 crescendo' src={photo1}></img>
+                            </div>
 
                             <div className='txt-section crescendo'>
                                 <h1>Missão</h1>
@@ -154,9 +157,7 @@ const Home = () => {
                                 <p>Atuamos de forma engajada e comprometida e priorizamos a solução dos problemas enfrentados pelo aluno, através da nossa atuação.
                                 </p>
                             </div>
-                            <div>
-                                <img className='img-section2 crescendo' src={photo1}></img>
-                            </div>
+                           
                             <div className='txt-section crescendo'>
                                 <h1>Simplicidade e Foco</h1>
                                 <p>Procedemos de forma simples e objetiva, buscando desburocratizar e descomplicar, e colocamos os processos e projetos a serviço das pessoas, sempre de forma clara e transparente.

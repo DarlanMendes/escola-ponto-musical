@@ -65,6 +65,7 @@ body{
     justify-content: star;
     /* background-image: linear-gradient(to bottom, black 30%, transparent); */
     border-radius: 30px;
+    min-width: 320px;
    
 }
 .logo-school-home:hover{
@@ -109,13 +110,12 @@ body{
 
 .txt-pg1-home{
     margin:0 0px 0px 0; 
-    font-size: 56px;
+    font-size: 4vh;
     font-weight: 700;
     color: rgb(255, 255, 255);
-    text-align: start;
-   
-   border-radius: 20px;
-   transform:translateX(-30px);
+    text-align:center;
+    border-radius: 20px;
+  
 }
 
 .pg2{
@@ -163,6 +163,8 @@ body{
 #fototurma{
     border-radius: 30px;
     width: 40vw;
+    min-width: 330px;
+
 }
 
 .history{
@@ -179,12 +181,10 @@ body{
 
 .group_section{
     display: flex;    
-    justify-content: center;
+     
+    width: 95vw;
+    padding: auto;
     
-    position: relative;
-    height:90vh;
-    
-    width: 100vw;
 }
 
 
@@ -198,16 +198,15 @@ body{
 }
 
 .img-section2{
-    width: 30vw;
     border-radius: 20px;
-    margin: 20px;
+    max-height: 200px;
     min-width: 350px;
+    margin: 10px;
 }
 
 .txt-section{
     margin-top: 70px;
-    height:26vh;
-    width:35vw;
+    max-height: 200px;
     padding: 5px;
     width: 25vh;
     font-weight: 28px;
@@ -217,17 +216,25 @@ body{
     background-color: rgba(245, 245, 220, 0.671);
     border-radius: 20px;
     box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.507);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
     
    }
 
 .txt-section h1{
     font-size:20px;
     margin:5px 0;
+    
+    text-align: center;
 }
 .txt-section p{
     font-size:13px;
     width: 180px;
     margin: 0;
+    text-align: center;
+    
 }
 
 .crescendo:hover{
@@ -288,7 +295,7 @@ body{
 }
 .contatos-lado-direito-img{
     width: 40vw;
-    height: 60 vh;
+    min-width: 300px;
 
 }
 .cnt-ld-esqrdo-txt{
