@@ -109,14 +109,15 @@ const Home = () => {
                                 </ul>
 
                             </div>
-                            <div>
-                                <img className='img-section crescendo' src={photo1}></img>
-                            </div>
+                            
 
                             <div className='txt-section crescendo'>
                                 <h1>Missão</h1>
                                 <p>Contribuir para difusão da educação musical, formação de público, na excelência do ensino livre de música e visando a valorização da arte e da cultura e de toda cadeia produtiva.
                                 </p>
+                            </div>
+                            <div>
+                                <img className='img-section crescendo' src={photo1}></img>
                             </div>
                             <div className='txt-section crescendo'>
                                 <h1>Visão</h1>
@@ -129,6 +130,7 @@ const Home = () => {
                                 <p>Focamos no sucesso do aluno, na qualidade da sua aprendizagem de forma individualizada e personalizada e o seu encantamento em relação à sua experiência na nossa escola.
                                 </p>
                             </div>
+                           
                             <div className='txt-section crescendo'>
                                 <h1>Ética</h1>
                                 <p>Agimos e comunicamos de acordo com os valores que norteiam uma conduta íntegra, respeitando as normas públicas e os regulamentos internos, de forma clara,  principalmente nas questões financeiras adotamos uma conduta justa e transparente diante de todos.
@@ -146,17 +148,18 @@ const Home = () => {
 
                                 </p>
                             </div>
-                            <img className='img-section crescendo' src={photo3}></img>
-                            <img className='img-section crescendo' src={photo2}></img>
+                            
+                           
 
 
 
-
+                           
                             <div className='txt-section crescendo'>
                                 <h1>Compromisso com o resultado</h1>
                                 <p>Atuamos de forma engajada e comprometida e priorizamos a solução dos problemas enfrentados pelo aluno, através da nossa atuação.
                                 </p>
                             </div>
+
                            
                             <div className='txt-section crescendo'>
                                 <h1>Simplicidade e Foco</h1>
@@ -165,8 +168,8 @@ const Home = () => {
                             </div>
                             <img className='img-section crescendo' src={photo5}></img>
                             <img className='img-section crescendo' src={photo4}></img>
-
-
+                            <img className='img-section crescendo' src={photo3}></img>
+                            <img className='img-section crescendo' src={photo2}></img>
 
 
                         </div>

@@ -8,6 +8,7 @@
     margin: auto;
 }
 .login--page--container{
+    position: absolute;
     width: 80vw;
     min-width: 300px;
     max-width: 550px;
@@ -70,7 +71,11 @@
 }
 
 .logo-login{
+    position: relative;
+    margin-top:15vh;
     width: 40%;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
+    background-color: black;
+    border-radius: 40px;
    
 }
